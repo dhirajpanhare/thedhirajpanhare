@@ -6,112 +6,108 @@
 
 @layer base {
   :root {
+    /* Professional Light Theme - Clean White with Blue & Purple Accents */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 214 100% 50%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 214 100% 60%;
+    --primary-glow: 221 83% 63%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
     --accent: 262 83% 58%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 214 100% 50%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
 
     --radius: 0.75rem;
 
-    /* Portfolio specific colors */
-    --hero-gradient: linear-gradient(135deg, hsl(214 100% 50%), hsl(262 83% 58%));
-    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    /* Professional Portfolio Colors */
     --section-bg: 210 40% 98%;
+    --hero-gradient: linear-gradient(135deg, hsl(221 83% 53%), hsl(262 83% 58%));
+    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px -2px hsl(214 100% 50% / 0.1);
-    --shadow-glow: 0 0 30px hsl(214 100% 50% / 0.3);
+    --shadow-soft: 0 4px 20px -2px hsl(221 83% 53% / 0.15);
+    --shadow-glow: 0 0 40px hsl(221 83% 53% / 0.3);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 221 83% 53%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    /* Professional Dark Theme - Deep Navy with Vibrant Blue & Purple */
+    --background: 222 47% 11%;
     --foreground: 210 40% 98%;
 
-    --card: 220 13% 13%;
+    --card: 217 33% 17%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 220 13% 13%;
+    --popover: 217 33% 17%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 214 100% 50%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 214 100% 60%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --primary-glow: 217 91% 70%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 262 83% 58%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 270 91% 65%;
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 214 100% 50%;
+    --border: 217 33% 24%;
+    --input: 217 33% 24%;
+    --ring: 217 91% 60%;
 
-    /* Dark mode portfolio colors */
-    --hero-gradient: linear-gradient(135deg, hsl(214 100% 50%), hsl(262 83% 58%));
-    --card-gradient: linear-gradient(145deg, hsl(220 13% 13%), hsl(217.2 32.6% 17.5%));
-    --section-bg: 217.2 32.6% 15.5%;
+    /* Dark Mode Professional Colors */
+    --section-bg: 222 47% 13%;
+    --hero-gradient: linear-gradient(135deg, hsl(217 91% 60%), hsl(270 91% 65%));
+    --card-gradient: linear-gradient(145deg, hsl(217 33% 17%), hsl(217 33% 24%));
     
-    /* Dark shadows */
-    --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
-    --shadow-glow: 0 0 30px hsl(214 100% 50% / 0.4);
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Dark Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.4);
+    
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98;
+    --sidebar-border: 220 25% 20%;
+    --sidebar-ring: 180 90% 50%;
   }
 }
 
@@ -121,6 +117,416 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+    font-variation-settings: "opsz" auto;
+  }
+
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
+}
+
+/* Professional Animations */
+@layer utilities {
+  /* Gradient Animation - Smooth flowing colors */
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient {
+    animation: gradient 4s ease-in-out infinite;
+  }
+
+  /* Fade In Animations with smooth easing */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-fade-in-down {
+    animation: fade-in-down 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-fade-in-left {
+    animation: fade-in-left 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-fade-in-right {
+    animation: fade-in-right 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  /* Delay Classes */
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .delay-700 {
+    animation-delay: 700ms;
+  }
+
+  .delay-800 {
+    animation-delay: 800ms;
+  }
+
+  .delay-1000 {
+    animation-delay: 1000ms;
+  }
+
+  /* Slow Spin for Glow Effects */
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+  }
+
+  /* Floating Animation - Smooth up and down */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px);
+    }
+    25% {
+      transform: translateY(-15px) translateX(5px);
+    }
+    50% {
+      transform: translateY(-25px) translateX(0px);
+    }
+    75% {
+      transform: translateY(-15px) translateX(-5px);
+    }
+  }
+
+  .animate-float {
+    animation: float 8s ease-in-out infinite;
+  }
+
+  /* Glow Pulse - Professional pulsing effect */
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3), 0 0 40px hsl(var(--primary) / 0.1);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.6), 0 0 80px hsl(var(--primary) / 0.2);
+    }
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+
+  /* Shimmer Effect - Professional shine animation */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--primary) / 0.1) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  /* Scale Pulse - Subtle breathing effect */
+  @keyframes scale-pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-scale-pulse {
+    animation: scale-pulse 4s ease-in-out infinite;
+  }
+
+  /* Bounce In - Professional entrance */
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animate-bounce-in {
+    animation: bounce-in 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  }
+
+  /* Slide Up - Smooth reveal */
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  /* Rotate In - 3D entrance */
+  @keyframes rotate-in {
+    from {
+      opacity: 0;
+      transform: perspective(1000px) rotateY(-90deg);
+    }
+    to {
+      opacity: 1;
+      transform: perspective(1000px) rotateY(0deg);
+    }
+  }
+
+  .animate-rotate-in {
+    animation: rotate-in 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  /* Glow Border - Animated border glow */
+  @keyframes glow-border {
+    0%, 100% {
+      border-color: hsl(var(--primary) / 0.3);
+      box-shadow: 0 0 10px hsl(var(--primary) / 0.2);
+    }
+    50% {
+      border-color: hsl(var(--primary) / 0.8);
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+    }
+  }
+
+  .animate-glow-border {
+    animation: glow-border 2s ease-in-out infinite;
+  }
+
+  /* Text Glow - Glowing text effect */
+  @keyframes text-glow {
+    0%, 100% {
+      text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+    }
+    50% {
+      text-shadow: 0 0 20px hsl(var(--primary) / 0.8), 0 0 30px hsl(var(--accent) / 0.5);
+    }
+  }
+
+  .animate-text-glow {
+    animation: text-glow 2s ease-in-out infinite;
+  }
+}
+
+/* Additional Responsive Utilities */
+@layer utilities {
+  /* Mobile-first responsive text */
+  .text-responsive-xs {
+    @apply text-xs sm:text-sm md:text-base;
+  }
+
+  .text-responsive-sm {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  .text-responsive-base {
+    @apply text-base sm:text-lg md:text-xl;
+  }
+
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+
+  .text-responsive-xl {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  .text-responsive-2xl {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .text-responsive-3xl {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  /* Responsive spacing */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-card/30 backdrop-blur-md border border-border/50;
+  }
+
+  .glass-hover {
+    @apply hover:bg-card/50 hover:border-primary/30;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .transition-slow {
+    @apply transition-all duration-500 ease-in-out;
+  }
+}
+
+/* Mobile Menu Animations */
+@media (max-width: 1024px) {
+  .mobile-menu-enter {
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Prevent horizontal scroll on mobile */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
   }
 }
